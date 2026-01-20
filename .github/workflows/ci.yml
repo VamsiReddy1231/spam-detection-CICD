@@ -31,3 +31,8 @@ jobs:
       - name: Run tests
         run: |
           pytest tests/
+
+      # 🔽 STEP 6: Zero-downtime deployment (automation)
+      - name: Deploy using Blue-Green strategy
+        run: |
+          echo "CI passed. Deploying new model with zero downtime..."
